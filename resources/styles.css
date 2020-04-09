@@ -1,0 +1,74 @@
+*{
+    padding:0 px;
+    margin: 0 px;
+    box-sizing: border-box;
+}
+
+#khung{
+    width: 1600px;
+    height: 800px;
+    border: 2px solid cornflowerblue;
+    background-color: cornflowerblue;
+}
+
+@-webkit-keyframes Boi{
+0%{ left: 0px ;}
+100%{ left: 1600px ;}
+}
+@-webkit-keyframes lan{
+    0%{ left: 0px ;}
+    20%{ left: 400px ;transform: translateY(600px) ;}
+    40%{ left: 500px ;transform: translateY(0px) ;}
+    60%{ left: 800px ;transform: translateY(0px) ;}
+    70%{ left: 1200px ;transform: translateY(600px) ;}
+    80%{ left: 1300px ;transform: translateY(600px) ;}
+    90%{ left: 1400px ;transform: translateY(300px) ;}
+    100%{ left: 1600px ;}
+}
+.ca1{
+    animation-name: Boi;
+    animation-duration: 10s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+}
+.ca2{
+    margin-top: 20px;
+    animation-name: Boi;
+    animation-duration: 14s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+}
+.ca3{
+    margin-top: 400px;
+    animation-name: Boi;
+    animation-duration: 7s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+}
+.ca4{
+    margin-top: 200px;
+    animation-name: Boi;
+    animation-duration: 20s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+    animation-timing-function: linear
+}
+.tholan1{
+    animation-name: lan;
+    animation-duration: 20s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+    animation-timing-function: linear
+}
+.tholan2{
+    animation-name: lan;
+    animation-duration: 10s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+}
+.tholan3{
+    animation-name: lan;
+    animation-duration: 30s ;
+    animation-iteration-count:infinite;
+    position: absolute;
+}
