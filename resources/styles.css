@@ -5,6 +5,7 @@
 }
 
 #khung{
+    
     width: 1600px;
     height: 800px;
     border: 2px solid cornflowerblue;
@@ -13,8 +14,10 @@
 
 @-webkit-keyframes Boi{
 0%{ left: 0px ;}
-100%{ left: 1600px ;}
+100%{left: 1600px ;}
 }
+
+
 @-webkit-keyframes lan{
     0%{ left: 0px ;}
     20%{ left: 400px ;transform: translateY(600px) ;}
@@ -23,15 +26,19 @@
     70%{ left: 1200px ;transform: translateY(600px) ;}
     80%{ left: 1300px ;transform: translateY(600px) ;}
     90%{ left: 1400px ;transform: translateY(300px) ;}
-    100%{ left: 1600px ;}
+    100%{ left: 1600px ; }
 }
 .ca1{
+    
+    animation-fill-mode: forwards;
     animation-name: Boi;
-    animation-duration: 10s ;
+    animation-duration: 11s ;
     animation-iteration-count:infinite;
     position: absolute;
+   
 }
 .ca2{
+    
     margin-top: 20px;
     animation-name: Boi;
     animation-duration: 14s ;
@@ -39,12 +46,16 @@
     position: absolute;
 }
 .ca3{
+   
     margin-top: 400px;
-    animation-name: Boi;
-    animation-duration: 7s ;
+    animation-name: Boi ;
+    animation-duration: 10s ;
     animation-iteration-count:infinite;
     position: absolute;
+    animation-direction: alternate;
+    
 }
+
 .ca4{
     margin-top: 200px;
     animation-name: Boi;
@@ -54,6 +65,7 @@
     animation-timing-function: linear
 }
 .tholan1{
+    /* animation-direction: alternate-reverse; */
     animation-name: lan;
     animation-duration: 20s ;
     animation-iteration-count:infinite;
@@ -72,3 +84,13 @@
     animation-iteration-count:infinite;
     position: absolute;
 }
+
+
+/* img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+} */
